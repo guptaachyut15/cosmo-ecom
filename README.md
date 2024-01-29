@@ -9,6 +9,53 @@ This mini dummy ecom backend include apis for getting all the stored products an
 - FastApi
 - MongoDb
 
+## How to Run
+
+1. **Create a Virtual Environment:**
+
+    ```bash
+    python3 -m venv venv
+    ```
+
+2. **Activate the Virtual Environment:**
+
+   - On Windows:
+
+     ```bash
+     venv\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+
+4. **Run the application:**
+   -Using Uvicorn
+    ```bash
+    uvicorn main:app --reload --port 8080
+    ```
+## Environment Variables
+
+Before running the Zerodha Clone, ensure you have set the following environment variables in a `.env` file at the root of your project. These variables are crucial for the proper functioning of the application.
+
+| Variable                  | Description                                                | Example Value                                      |
+|---------------------------|------------------------------------------------------------|----------------------------------------------------|
+| `MONGODB_CONNECTION_STRING`| The connection string for your MongoDB database.            | `mongodb://username:password@localhost:27017/` |
+
+Make sure to replace the placeholder values with your actual configuration. Keeping sensitive information, such as secret keys and connection strings, secure is essential for the proper and secure functioning of the application.
+
+The application should now be running locally. Access it through your web browser at http://localhost:8080.
+
+### Requests can be triggered from here:
+http://localhost:8080/docs
+
 ## Paths
 
 ### /products/
@@ -81,3 +128,4 @@ This mini dummy ecom backend include apis for getting all the stored products an
   - `msg` (Type: string): Message
   - `type` (Type: string): Error Type
 - Type: object
+
