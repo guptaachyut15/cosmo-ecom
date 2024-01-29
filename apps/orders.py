@@ -15,7 +15,7 @@ router = APIRouter(tags=["orders"])
 
 
 @router.post("/", description="Place an order")
-async def upload_order(order: Order):
+async def place_order(order: Order):
     LOG.info("upload_order called")
     status_code = 201
     content = {"status": "success"}
