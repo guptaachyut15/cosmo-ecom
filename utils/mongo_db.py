@@ -1,8 +1,8 @@
 from bson import ObjectId
 from pymongo import MongoClient
-from utils.config import MONGODB_URL
+from utils.config import MONGODB_CONNECTION_STRING
 
-client = MongoClient(MONGODB_URL)
+client = MongoClient(MONGODB_CONNECTION_STRING)
 
 db = client["cosmo_assignment"]
 

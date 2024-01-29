@@ -11,5 +11,5 @@ def get_config(name):
     return os.getenv(name)
 
 
-MONGODB_URL = get_config("MONGODB_URL")
+MONGODB_CONNECTION_STRING = get_config("MONGODB_CONNECTION_STRING")
 LOG = logging.getLogger(LoggerConstant.logger_name)
