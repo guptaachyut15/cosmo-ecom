@@ -16,8 +16,12 @@ This mini dummy ecom backend include apis for getting all the stored products an
     ```bash
     python3 -m venv venv
     ```
+    or
+   ```bash
+   python -m venv venv
+   ```
 
-2. **Activate the Virtual Environment:**
+3. **Activate the Virtual Environment:**
 
    - On Windows:
 
@@ -31,12 +35,12 @@ This mini dummy ecom backend include apis for getting all the stored products an
      source venv/bin/activate
      ```
 
-3. **Install Dependencies:**
+4. **Install Dependencies:**
 
    ```bash
    pip install -r requirements.txt
 
-4. **Run the application:**
+5. **Run the application:**
    -Using Uvicorn
     ```bash
     uvicorn main:app --reload --port 8080
